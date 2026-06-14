@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Design Portfolio</title>
+    <link rel="stylesheet" href="vendor/bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
+    <link rel="stylesheet" href="vendor/boxicons-2.1.2/css/boxicons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* Add some basic styles for the modal */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 70px;
+            top: 0;
+            width: 50%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+            padding-top: 60px;
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            color:black;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <img src="img/phirstlady_design.png" style="height: 80px;" alt="Project 1">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Omowumi Fiponmile</h1>
+            <h3>And I'm a<span> Graphic Designer</span></h3>
+            <p>My expertise includes logo design, branding, web design, and more. Dolore at quas officia, aut optio molestias</p>
+            <div class="social-media">
+                <a href="https://www.twitter.com/e9d8c28275024a8" class="social-media-link" target="_blank"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.instagram.com/Phirstladydesigns" class="social-media-link" target="_blank"><i class='bx bxl-instagram'></i></a>
+                <a href="https://wa.me/2348065182627" class="social-media-link" target="_blank"><i class='bx bxl-whatsapp'></i></a>
+                <a href="https://www.facebook.com/yourprofile" class="social-media-link" target="_blank"><i class='bx bxl-facebook'></i></a>
+            
+            </div>
+            <a href="docs/FIPONMILE_CV.pdf" class="btn" download="FIPONMILE_CV.pdf">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="img/portfolio_img.png" alt="Project 1">
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/portfolio_img.png" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About<span> Me</span></h2>
+            <h3>Frontend Developer!</h3>
+            <p>My name is Omowumi Fiponmile Mary. A graduate of Computer science and Mathematics, majored in Graphics/Web design.</p>
+            <div class="more-content" id="moreContent">
+                <p>Additional details about me... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p>Further information... Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </div>
+            <button class="btn about-btn" id="readMoreBtn">Read More</button>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="heading">Our<span> Services</span></h2>
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam deleniti at commodi cum. Aspernatur placeat quia voluptatum quam, mollitia facilis error dolor sapiente quas reprehenderit aliquid id ad deleniti nesciunt.</p>
+                <a href="web.html" class="btn about-btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bxs-paint'></i>
+                <h3>Graphics Design</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam deleniti at commodi cum. Aspernatur placeat quia voluptatum quam, mollitia facilis error dolor sapiente quas reprehenderit aliquid id ad deleniti nesciunt.</p>
+                <a href="graphics_design.html" class="btn about-btn">Read More</a>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-bar-chart-alt'></i>
+                <h3>Digital Market</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam deleniti at commodi cum. Aspernatur placeat quia voluptatum quam, mollitia facilis error dolor sapiente quas reprehenderit aliquid id ad deleniti nesciunt.</p>
+                <a href="#" class="btn about-btn">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Latest<span> Projects</span></h2>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="portfolio-box">
+                        <img src="img/Revelation (Awe).jpg" alt="">  
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id cum officia possimus fugit voluptas rem rerum, impedit alias voluptates eligendi odit distinctio dignissimos tempora. Similique nobis beatae repellendus quod.</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-box">
+                        <img src="img/grandpa_banner2.jpg" style="height: 520px;" alt="">  
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id cum officia possimus fugit voluptas rem rerum, impedit alias voluptates eligendi odit distinctio dignissimos tempora. Similique nobis beatae repellendus quod.</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-box">
+                        <img src="img/PHIRSTLADY_DESIGNS.jpg" style="height: 520px;"  alt="">  
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id cum officia possimus fugit voluptas rem rerum, impedit alias voluptates eligendi odit distinctio dignissimos tempora. Similique nobis beatae repellendus quod.</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-box" style=" position: relative;top:30px;">
+                        <img src="img/praisesunday.jpg" alt="">  
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id cum officia possimus fugit voluptas rem rerum, impedit alias voluptates eligendi odit distinctio dignissimos tempora. Similique nobis beatae repellendus quod.</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-box" style=" position: relative; top:30px; height: 400px;">
+                        <img src="img/youthsun.jpg" alt="">  
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id cum officia possimus fugit voluptas rem rerum, impedit alias voluptates eligendi odit distinctio dignissimos tempora. Similique nobis beatae repellendus quod.</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="portfolio-box" style=" position: relative;top:25px ;">
+                        <img src="img/healthtalk2.jpg"  alt="">  
+                        <div class="portfolio-layer">
+                            <h4>Web Design</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi id cum officia possimus fugit voluptas rem rerum, impedit alias voluptates eligendi odit distinctio dignissimos tempora. Similique nobis beatae repellendus quod.</p>
+                            <a href="#"><i class='bx bx-link-external'></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+                    <!-----Contact Section--------->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact<span> Me</span></h2>
+        <form method="POST" id="contactForm">
+            <div class="input-box">
+                <input type="text" name="fullname" placeholder="Fullname" required>
+                <input type="email" name="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-box">
+                <input type="text" name="phone" placeholder="Phone Number" required>
+                <input type="text" name="subject" placeholder="Email Subject" required>
+            </div>
+            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+            </form>
+    </section> 
+
+<!-- The Modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modalMessage"></p>
+         </div>
+    </div>
+     
+<!-----footer design------>
+    <footer class="footer">
+        <p>Cpoyright &copy; 2024 by Phirstladydesign| All Rights Reserved. </p>
+        
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+<!------------script readmore button-------->
+<script>
+    document.getElementById('readMoreBtn').addEventListener('click', function() {
+        var moreContent = document.getElementById('moreContent');
+        if (moreContent.style.display === 'none' || moreContent.style.display === '') {
+            moreContent.style.display = 'block';
+            this.textContent = 'Read Less';
+        } else {
+            moreContent.style.display = 'none';
+            this.textContent = 'Read More';
+        }
+    });
+</script>
+
+<!------------script(contact) -------->
+<script src="js/jquery.min.js"></script>
+<script>
+   
+    $(document).ready(function() {
+            var modal = $('#myModal');
+            var modalMessage = $('#modalMessage');
+            var span = $('.close');
+
+            span.on('click', function() {
+                modal.hide();
+            });
+
+            $(window).on('click', function(event) {
+                if ($(event.target).is(modal)) {
+                    modal.hide();
+                }
+            });
+
+            $('#contactForm').on('submit', function(event) {
+                event.preventDefault(); // Prevent the default form submission
+
+                $.ajax({
+                    url: 'send_mail.php',
+                    type: 'POST',
+                    data: $(this).serialize(),
+                    success: function(response) {
+                        modalMessage.text(response);
+                        modal.show();
+                    },
+                    error: function() {
+                        modalMessage.text('Failed to send message. Please try again later.');
+                        modal.show();
+                    }
+                });
+            });
+        });
+</script>
+
+<!-----Custom Js------->
+    <!-- <script src="js/jquery.min.js"></script> -->
+    <script src="vendor/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
