@@ -153,15 +153,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 
-<!-- Navbar
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <div class="container-lg">
-        <a class="navbar-brand fw-bold" href="#">Pharmacy Inventory</a>
-        <a class="navbar-brand fw-bold" href="../../dashboard.php">
-    <i class="fas fa-arrow-left me-2"></i>Back to Dashboard
-</a>
-    </div>
-</nav> -->
+
 
 <div class="container-lg mt-5" style="padding-left: 200px;">
 
