@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2026 at 09:27 PM
+-- Generation Time: Jun 15, 2026 at 10:23 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -151,34 +151,6 @@ CREATE TABLE `ict_staff` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `ict_staff`
---
-
-INSERT INTO `ict_staff` (`id`, `staff_name`, `email`, `designation`, `conhess`, `location`, `sign_date`, `birthday`, `phone_no`, `created_at`) VALUES
-(1, 'Ajayi, Oluwadare Joseph', 'oluwadare.ajayi@oauthc.gov.ng, deejoeng@yahoo.com', 'Deputy Director ICT', '14/9', 'IHU', NULL, '2026-05-21', '08033567502', '2026-05-21 15:26:00'),
-(2, 'Shote-Osunleke, Eniola A.', 'eniolashote2@gmail.com, eniola.shote-osunleke@oauthc.gov.ng', 'Deputy Director ICT', '14/8', 'IHU', NULL, '2026-05-22', '08037127621', '2026-05-21 15:26:00'),
-(3, 'Adegbile, Victor Tunde', 'tundestinyaugust@gmail.com, tunde.adegbile@oauthc.gov.ng', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '2026-05-23', '08135001676', '2026-05-21 15:26:00'),
-(4, 'Adeniran, Modinat Yetunde', 'adeniranmodinat85@gmail.com, modinat.adeniran@oauthc.gov.ng', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '2026-05-24', '08079778021', '2026-05-21 15:26:00'),
-(5, 'Awe, Kehinde Oluwatomi', 'adeboye.kehindetomi@gmail.com, awe.kehinde@oauthc.gov.ng', 'Senior Computer Analyst', '8/3', 'IHU', NULL, '2026-05-25', '07060533511', '2026-05-21 15:26:00'),
-(6, 'Babalola, Samuel Aderemi', '', 'Senior Engineer', '9/5', 'IHU', NULL, '2026-05-26', NULL, '2026-05-21 15:26:00'),
-(7, 'Awe, Toluwalase Emmanuel', 'awetoluwalase@gmail.com, toluwalase.awe@oauthc.gov.ng', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '2026-05-27', '07067897331', '2026-05-21 15:26:00'),
-(8, 'Ibrahim, Umar Zakari', 'umarizakari@gmail.com, umar.ibrahim@oauthc.gov.ng', 'Senior Computer Analyst', '8/3', 'IHU', NULL, '2026-05-28', '08033665451', '2026-05-21 15:26:00'),
-(9, 'Adediran, Adedayo David', 'adediranadedayo@gmail.com, adedayo.adediran@oauthc.gov.ng', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '2026-05-29', '08109064046', '2026-05-21 15:26:00'),
-(10, 'Anyabolu, Ogochukwu Glory', 'ganyabolu@gmail.com, ogochukwu.anyabolu@oauthc.gov.ng', 'Senior Computer Analyst', '8/3', 'IHU', NULL, '0000-05-30', '08064768111', '2026-05-21 15:30:57'),
-(11, 'Sambo, Abdulsamad', 'samboabdussamadusman1994@gmail.com, abdulsamad.sambo@oauthc.gov.ng', 'Senior Computer Analyst', '8/3', 'IHU', NULL, '0000-05-31', '08101869755', '2026-05-21 15:30:57'),
-(12, 'Essong, Akpama Essong', 'essongakpama@gmail.com, akpama.essong@oauthc.gov.ng', 'Senior Computer Analyst', '8/3', 'IHU', NULL, '0000-05-21', '08030608641', '2026-05-21 15:30:57'),
-(13, 'Adelani, Funmilola Mary', 'funmymary1@gmail.com, mary.adelani@oauthc.gov.ng', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '0000-05-22', '08067033510', '2026-05-21 15:30:57'),
-(14, 'Adediwura, Julianah Aanu', 'adediwurajulianah@gmail.com, julianah.adediwura@oauthc.gov.ng', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '0000-05-23', '07032851086', '2026-05-21 15:30:57'),
-(15, 'Omowumi, Fiponmile Mary', 'ponmileomowumi@gmail.com, fiponmile.omowumi@oauthc.gov.ng', 'Senior Computer Analyst', '8/3', 'IHU', NULL, '0000-05-24', '08065182627', '2026-05-21 15:30:57'),
-(16, 'Adeyeye, Evelyn Egbekauwa', 'mailevely@gmail.com, evelyn.adeyeye@oauthc.gov.ng', 'Senior Computer Analyst', '8/3', 'IHU', NULL, '0000-05-25', '07039694422', '2026-05-21 15:30:57'),
-(17, 'Adio, Segun James', 'hydrogenman7@gmail.com, segun.adio@oauthc.gov.ng', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '0000-05-26', '08064241662', '2026-05-21 15:30:57'),
-(18, 'Obinna, Rosemary Nwadiuto', 'rosemary.obinna@oauthc.gov.ng, bonav827@gmail.com', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '0000-05-27', '07035771138', '2026-05-21 15:30:57'),
-(19, 'Adeosun Aderonke A.', 'adeosunaderonke2024@gmail.com, aderonke.adeosun@oauthc.gov.ng', 'Senior Data Processing Officer', '8/3', 'IHU', NULL, '0000-05-28', '08062562612', '2026-05-21 15:30:57'),
-(20, 'Alao Akintayo Victor', 'akintayoalao11@gmail.com, akintayo.alao@oauthc.gov.ng', 'Data Processing Officer', '7/5', 'IHU', NULL, '0000-05-29', '07060676718', '2026-05-21 15:30:57'),
-(21, 'Ilutanmi Ibukunoluwa', 'ibukunilutanmi@gmail.com, ibukunoluwa.ilutanmi@oauthc.gov.ng', 'Computer Analyst', '7/5', 'IHU', NULL, '0000-05-30', '08063026873', '2026-05-21 15:30:57'),
-(22, 'Omoyayi Opeyemi Roseline', 'omoyayiopeyemi2020@gmail.com, opeyemi.omoyayi@oauthc.gov.ng', 'Data Processing Officer', '7/3', 'IHU', NULL, '0000-05-31', '08028379943', '2026-05-21 15:30:57');
-
 -- --------------------------------------------------------
 
 --
@@ -320,7 +292,24 @@ INSERT INTO `products` (`id`, `barcode`, `product_name`, `nafdacno`, `generic_na
 (3, 'M001', 'Mistmag', '', NULL, NULL, NULL, 2, NULL, NULL, NULL, NULL, '2027-04-30', 750.00, 900.00, 25, 10, NULL, NULL, '2026-05-20 12:41:37'),
 (4, 'P001', 'Piritin', '', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '2026-06-21', 1200.00, 1300.00, 22, 10, NULL, NULL, '2026-05-21 09:12:33'),
 (5, '01', 'Chloroquine', 'CL101', NULL, NULL, NULL, 5, NULL, NULL, NULL, NULL, '2027-05-21', 1000.00, 1200.00, 14, 10, NULL, NULL, '2026-05-21 14:23:13'),
-(6, '6008879066688', 'ROBB Inhaler', '04-0315', NULL, 1, 1, 2, 2, NULL, NULL, NULL, '2027-01-31', 450.00, 550.00, 74, 10, NULL, NULL, '2026-05-21 15:08:37');
+(6, '6008879066688', 'ROBB Inhaler', '04-0315', NULL, 1, 1, 2, 2, NULL, NULL, NULL, '2026-01-31', 450.00, 550.00, 74, 10, NULL, NULL, '2026-05-21 15:08:37');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product_batches`
+--
+
+CREATE TABLE `product_batches` (
+  `id` int(11) NOT NULL,
+  `product_id` int(11) NOT NULL,
+  `batch_number` varchar(100) DEFAULT NULL,
+  `expiry_date` date DEFAULT NULL,
+  `quantity` int(11) DEFAULT 0,
+  `cost_price` decimal(10,2) DEFAULT NULL,
+  `selling_price` decimal(10,2) DEFAULT NULL,
+  `created_at` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
 
@@ -533,15 +522,6 @@ CREATE TABLE `suppliers` (
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Dumping data for table `suppliers`
---
-
-INSERT INTO `suppliers` (`id`, `supplier_name`, `contact_person`, `phone`, `email`, `address`, `status`, `created_at`) VALUES
-(1, 'Amadi Obinna', 'Bomboy Amadi', '09122345566', 'amadi@gmail.com', '5, Igwe crescent, Abia State', 'active', '2026-05-22 09:25:05'),
-(2, 'Obinna Rose', 'Obinna Rose', '09122345562', 'bonav827@gmail.com', 'Eleyele, Ile-Ife', 'active', '2026-05-22 10:32:37'),
-(4, 'Awe Kehinde Tomi', 'Awe Ayinla', '09122345590', 'awekenny@gmail.com', 'London', 'active', '2026-05-22 10:36:22');
-
 -- --------------------------------------------------------
 
 --
@@ -585,15 +565,6 @@ CREATE TABLE `users` (
   `last_login` datetime DEFAULT NULL,
   `created_at` timestamp NOT NULL DEFAULT current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
---
--- Dumping data for table `users`
---
-
-INSERT INTO `users` (`id`, `fullname`, `username`, `email`, `phone`, `fileno`, `password`, `role_id`, `branch_id`, `status`, `last_login`, `created_at`) VALUES
-(1, 'Administrator', 'admin', 'admin@gmail.com', NULL, '', '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', 1, NULL, 'active', NULL, '2026-05-19 17:46:59'),
-(2, 'Fiponmile Omowumi', 'Phirstlady01', 'fiponmileomowumi1@gmail.com', '08065182627', 'P17683', '$2y$10$B.MiKA/LS5Aj/ASF/b00yeEUTzT4ZrBMD5TqirGhAt2XpOPAufPui', 2, NULL, 'active', NULL, '2026-05-20 09:27:49'),
-(3, 'Omowumi Fiponmile Mary', 'Phirstlady1', 'phirstlady1.fm@gmail.com', '+2348152208244', 'P17683', '$2y$10$MOJe4a/kBXmRp.q2ZyMHAOJl2tA5nXuC.58EQEVy/yZj/poSeRpHy', 2, NULL, 'active', NULL, '2026-06-06 18:57:53');
 
 --
 -- Indexes for dumped tables
@@ -700,6 +671,12 @@ ALTER TABLE `products`
   ADD KEY `fk_category` (`category_id`),
   ADD KEY `fk_brand` (`brand_id`),
   ADD KEY `fk_manufacturer` (`manufacturer_id`);
+
+--
+-- Indexes for table `product_batches`
+--
+ALTER TABLE `product_batches`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `purchase_items`
@@ -835,7 +812,7 @@ ALTER TABLE `expenses`
 -- AUTO_INCREMENT for table `ict_staff`
 --
 ALTER TABLE `ict_staff`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `inventory_movements`
@@ -878,6 +855,12 @@ ALTER TABLE `prescriptions`
 --
 ALTER TABLE `products`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `product_batches`
+--
+ALTER TABLE `product_batches`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `purchase_items`
@@ -931,7 +914,7 @@ ALTER TABLE `stock_transfers`
 -- AUTO_INCREMENT for table `suppliers`
 --
 ALTER TABLE `suppliers`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `unit`
@@ -943,7 +926,7 @@ ALTER TABLE `unit`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- Constraints for dumped tables
